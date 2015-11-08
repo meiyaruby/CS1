@@ -1,0 +1,47 @@
+Welcome to the Idris REPL!
+Idris 0.9.18.1-git:b6c9ef8
+
+Type checking ./Bit.idr
+λΠ> one: Bit
+(input):1:4: error: expected: "$",
+    "&&", "*", "*>", "+", "++", "-",
+    "->", ".", "/", "/=", "::", "<",
+    "<$>", "<*", "<*>", "<+>", "<<",
+    "<=", "<|>", "=", "==", ">",
+    ">=", ">>", ">>=", "\\\\", "`",
+    "||", "~=~",
+    ambiguous use of a left-associative operator,
+    ambiguous use of a non-associative operator,
+    ambiguous use of a right-associative operator,
+    end of input, function argument,
+    matching application expression
+one: Bit<EOF> 
+   ^          
+λΠ> one
+one : Bit
+λΠ> one : Bit
+(input):1:5: error: expected: "$",
+    "&&", "*", "*>", "+", "++", "-",
+    "->", ".", "/", "/=", "::", "<",
+    "<$>", "<*", "<*>", "<+>", "<<",
+    "<=", "<|>", "=", "==", ">",
+    ">=", ">>", ">>=", "\\\\", "`",
+    "||", "~=~",
+    ambiguous use of a left-associative operator,
+    ambiguous use of a non-associative operator,
+    ambiguous use of a right-associative operator,
+    end of input, function argument,
+    matching application expression
+one : Bit<EOF> 
+    ^          
+λΠ> :t one
+one : Bit
+λΠ> :t zero
+zero : Bit
+λΠ> :t change
+change : Bit -> Bit
+λΠ> :t Bit
+Bit : Type
+λΠ> change one
+zero : Bit
+λΠ> 
